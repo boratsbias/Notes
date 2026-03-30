@@ -1,3 +1,5 @@
 .DS_Store
 .obsidian/workspace*
-.obsidian/cache
+.obsidian/cach
+.obsidian/plugins/
+.obsidian/workspace.jsone
