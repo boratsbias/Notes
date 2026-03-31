@@ -69,6 +69,7 @@ Data moves downward through the layers until it reaches the lowest layer where t
 Each layer communicates with the corresponding layer on another machine. These communicating components are known as **peers**.
 
 ![Protocol peers](../../images/cn/protocol-peers.svg)
+
 **Figure: Protocol peers**
 
 Although peers appear to communicate directly, the data actually passes through each layer of the system.
@@ -87,6 +88,7 @@ The OSI model is a conceptual framework that divides networking functionality in
 Each layer handles a different part of the communication process.
 
 ![OSI model](../../images/cn/osi-model.svg)
+
 **Figure: The OSI model**
 
 **Physical layer**: Handles the transmission of raw bits across a physical medium such as copper cables or optical fiber.
@@ -128,6 +130,7 @@ A packet is a small block of data transmitted as a single unit across the networ
 Packet switching replaced traditional circuit switching because it improves reliability and resource utilization.
 
 ![Packet structure](../../images/cn/packet.svg)
+
 **Figure: Packet**
 
 Packets typically contain two parts:
