@@ -83,27 +83,25 @@ Two important terms:
 
 ## The OSI Model
 
-The OSI model is a conceptual framework that divides networking functionality into seven layers.
-
-Each layer handles a different part of the communication process.
+The OSI model is a conceptual framework that divides network communication into seven layers. Each layer performs a specific role in the communication process.
 
 ![OSI model](../../images/cn/osi-model.svg)
 
-**Figure: The OSI model**
+**The OSI model**
 
-**Physical layer**: Handles the transmission of raw bits across a physical medium such as copper cables or optical fiber.
+The **physical layer** is the lowest layer. It transmits raw bits over a shared medium such as copper cables or optical fiber.
 
-**Data link layer**: Ensures reliable transfer of frames across a link and detects transmission errors.
+The **data link layer** reconstructs transmitted data into a form that appears free of transmission errors.
 
-**Network layer**: Responsible for selecting routes and delivering packets across multiple networks.
+The **network layer** controls packet routing from source to destination. Routes may use static tables or be built dynamically by routing protocols.
 
-**Transport layer**: Breaks large messages into smaller segments and reassembles them at the receiving side.
+The **transport layer** divides data from the upper layer into smaller pieces for transmission and reassembles them in order at the destination.
 
-**Session layer**: Manages communication sessions between applications.
+The **session layer** establishes and manages communication sessions between machines.
 
-**Presentation layer**: Handles data representation issues such as encoding, formatting, and translation.
+The **presentation layer** ensures that the syntax and semantics of transmitted data can be interpreted correctly by other machines.
 
-**Application layer**: Provides services used directly by applications such as web browsing or file transfer.
+The **application layer** contains protocols used directly by applications, such as HTTP.
 
 ## Connection-Oriented vs Connectionless Services
 
@@ -181,37 +179,18 @@ Many packet losses on the Internet occur due to congestion.
 
 Several types of delay affect packet delivery.
 
-**Transmission delay**
-
-Time required to push all packet bits onto the communication link.
-
-**Propagation delay**
-
-Time required for a signal to travel through the medium.
-
-**Store-and-forward delay**
-
-Time required for a switch to receive a full packet before forwarding.
-
-**Queueing delay**
-
-Time a packet spends waiting in a router buffer before being processed.
+- **Transmission delay**: Time required to push all packet bits onto the communication link.
+- **Propagation delay**: Time required for a signal to travel through the medium.
+- **Store-and-forward delay**: Time required for a switch to receive a full packet before forwarding.
+- **Queueing delay**: Time a packet spends waiting in a router buffer before being processed.
 
 ## Data Rate, Throughput, and Bandwidth
 
 These terms describe network performance.
 
-**Data rate**
-
-The number of bits transmitted per unit time.
-
-**Throughput**
-
-The actual effective transmission rate after accounting for overhead and inefficiencies.
-
-**Bandwidth**
-
-Often used interchangeably with data rate, though it may also refer to maximum capacity of a link.
+- **Data rate**: Number of bits transmitted per unit time.
+- **Throughput**: Actual effective transmission rate after overhead and inefficiencies.
+- **Bandwidth**: Maximum capacity of a communication link, sometimes used interchangeably with data rate.
 
 Measurements are usually expressed in bits per second, such as:
 
