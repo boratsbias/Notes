@@ -68,6 +68,9 @@ Data moves downward through the layers until it reaches the lowest layer where t
 
 Each layer communicates with the corresponding layer on another machine. These communicating components are known as **peers**.
 
+![Protocol peers](../../images/cn/protocol-peers.svg)
+**Figure: Protocol peers**
+
 Although peers appear to communicate directly, the data actually passes through each layer of the system.
 
 Layered design makes networks flexible because one layer can be modified without affecting others as long as the interface remains unchanged.
@@ -83,33 +86,22 @@ The OSI model is a conceptual framework that divides networking functionality in
 
 Each layer handles a different part of the communication process.
 
-**Physical layer**
+![OSI model](../../images/cn/osi-model.svg)
+**Figure: The OSI model**
 
-Handles the transmission of raw bits across a physical medium such as copper cables or optical fiber.
+**Physical layer**: Handles the transmission of raw bits across a physical medium such as copper cables or optical fiber.
 
-**Data link layer**
+**Data link layer**: Ensures reliable transfer of frames across a link and detects transmission errors.
 
-Ensures reliable transfer of frames across a link and detects transmission errors.
+**Network layer**: Responsible for selecting routes and delivering packets across multiple networks.
 
-**Network layer**
+**Transport layer**: Breaks large messages into smaller segments and reassembles them at the receiving side.
 
-Responsible for selecting routes and delivering packets across multiple networks.
+**Session layer**: Manages communication sessions between applications.
 
-**Transport layer**
+**Presentation layer**: Handles data representation issues such as encoding, formatting, and translation.
 
-Breaks large messages into smaller segments and reassembles them at the receiving side.
-
-**Session layer**
-
-Manages communication sessions between applications.
-
-**Presentation layer**
-
-Handles data representation issues such as encoding, formatting, and translation.
-
-**Application layer**
-
-Provides services used directly by applications such as web browsing or file transfer.
+**Application layer**: Provides services used directly by applications such as web browsing or file transfer.
 
 ## Connection-Oriented vs Connectionless Services
 
@@ -134,6 +126,9 @@ Most modern networks transmit data using **packets**.
 A packet is a small block of data transmitted as a single unit across the network.
 
 Packet switching replaced traditional circuit switching because it improves reliability and resource utilization.
+
+![Packet structure](../../images/cn/packet.svg)
+**Figure: Packet**
 
 Packets typically contain two parts:
 
