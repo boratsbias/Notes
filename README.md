@@ -3,8 +3,6 @@ This repo is a collection of my personal notes while studying computer science, 
 
 Most notes come from textbooks, research papers, and other technical resources that I study.
 
-## Structure
-
 ### [Computational Intelligence](computational-intelligence/)
 Notes related to artificial intelligence, machine learning, deep learning, and data science, along with the mathematical and statistical foundations used in these areas.
 
