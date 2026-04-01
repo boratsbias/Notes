@@ -1,5 +1,3 @@
-# CS Notes 📚
-
 This repo is a collection of my personal notes while studying computer science, AI, and related topics. I use it as a place to organize what I learn, revisit concepts later, and slowly build a structured knowledge base.
 
 Most notes come from textbooks, research papers, and other technical resources that I study.
