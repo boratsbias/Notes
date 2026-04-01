@@ -1,7 +1,5 @@
 # Systems
 
-## Topics
-
 - [Operating Systems](operating-systems/)
 - [Computer Networks](computer-networks/)
 - [Databases](databases/)
