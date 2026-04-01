@@ -1,6 +1,5 @@
----
 # Computer Networking
----
+
 Computer networking studies how computers connect and communicate with each other. A network is essentially a group of machines that exchange information through communication links. While many networks exist, most discussions focus on the Internet because it is the largest and most widely used network.
 
 ## Network Hardware
