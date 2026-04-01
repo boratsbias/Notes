@@ -1,7 +1,7 @@
 # Operating Systems
 
 - [OS Fundamentals](00-os-fundamentals)
-- [Linux](01-linux)
+- [Linux](Linux.md)
 - [Processes](02-processes)
 - [Process Scheduling](03-process-scheduling)
 - [System Calls](04-system-calls)
