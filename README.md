@@ -6,12 +6,8 @@ Most notes come from textbooks, research papers, and other technical resources t
 
 ## Structure
 
-### AI  
-Notes related to artificial intelligence, machine learning, deep learning, and data science.  
-  
-**Math** – Mathematical concepts that appear in algorithms, machine learning, and other CS topics.  
-  
-**Statistics** – Probability and statistical ideas useful for data science and ML.
+### AI  & Math
+Notes related to artificial intelligence, machine learning, deep learning, and data science, along with the mathematical and statistical foundations used in these areas.
 
 ### Systems
 Core computer systems topics such as operating systems, computer networks, databases, distributed systems, and system design.
