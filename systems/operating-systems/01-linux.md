@@ -1,3 +1,5 @@
+# Linux
+
 Linux is an open-source operating system kernel. Many large internet companies run their infrastructure on Linux-based systems, making it useful for developers to understand how Linux works.
 
 When people refer to Linux, they often mean a complete operating system that includes the kernel, system utilities, and libraries. Technically, however, **Linux itself refers only to the kernel**, while the surrounding components are part of the operating system built around it.
