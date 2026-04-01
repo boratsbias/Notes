@@ -1,4 +1,3 @@
-
 # System Calls
 
 ## Introduction
