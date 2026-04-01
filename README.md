@@ -6,14 +6,11 @@ Most notes come from textbooks, research papers, and other technical resources t
 
 ## Structure
 
-### AI
-Notes related to artificial intelligence, machine learning, deep learning, and data science.
-
-### Concepts
-Foundational ideas used across many areas of computer science.
-
-**Math** – Mathematical concepts that appear in algorithms, machine learning, and other CS topics.
-
+### AI  
+Notes related to artificial intelligence, machine learning, deep learning, and data science.  
+  
+**Math** – Mathematical concepts that appear in algorithms, machine learning, and other CS topics.  
+  
 **Statistics** – Probability and statistical ideas useful for data science and ML.
 
 ### Systems
