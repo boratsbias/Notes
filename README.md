@@ -1,4 +1,7 @@
-# CS Notes 📚
+---
+layout: home
+title: CS Notes
+---
 
 This repo is a collection of my personal notes while studying computer science, AI, and related topics. I use it as a place to organize what I learn, revisit concepts later, and slowly build a structured knowledge base.
 
