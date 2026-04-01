@@ -6,7 +6,7 @@ Most notes come from textbooks, research papers, and other technical resources t
 
 ## Structure
 
-### AI  & Math
+### Computational Intelligence
 Notes related to artificial intelligence, machine learning, deep learning, and data science, along with the mathematical and statistical foundations used in these areas.
 
 ### Systems
