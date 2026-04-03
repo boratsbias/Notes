@@ -44,7 +44,7 @@ struct page *alloc_pages(gfp_t gfp_mask, unsigned int order);
 ```
 
 - `order` determines the number of contiguous pages requested.
-- the number of pages allocated is 2order2^{order}2order
+- the number of pages allocated is $2^{order}$
 
 Example:
 
