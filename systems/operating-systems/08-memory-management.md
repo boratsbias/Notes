@@ -29,9 +29,9 @@ Common zones:
   
 | Zone           | Description                 | Physical Memory |
 | -------------- | --------------------------- | --------------- |
-| `ZONE_DMA`     | DMA-able pages.             | < 16MB          |
-| `ZONE_NORMAL`  | Normally addressable pages. | 16–896MB        |
-| `ZONE_HIGHMEM` | Dynamically mapped pages.   | > 896MB         |
+| `ZONE_DMA`     | DMA-able pages.             | < 16 MB         |
+| `ZONE_NORMAL`  | Normally addressable pages. | 16–896 MB       |
+| `ZONE_HIGHMEM` | Dynamically mapped pages.   | > 896 MB        |
   
 During allocation, the kernel selects pages from the appropriate zone.  
 
@@ -41,6 +41,7 @@ The main function used for page allocation is:
   
 ```c  
 struct page *alloc_pages(gfp_t gfp_mask, unsigned int order);
+```
 
 - `order` determines the number of contiguous pages requested.
 - the number of pages allocated is 2order2^{order}2order
@@ -53,6 +54,7 @@ Example:
 
 To free pages:
 
+```c
 void __free_pages(struct page *page, unsigned int order);
 ```
 
