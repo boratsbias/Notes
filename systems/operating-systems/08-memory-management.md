@@ -1,4 +1,4 @@
-# Kernel Memory Management  
+# Memory Management  
   
 ## Pages  
   
