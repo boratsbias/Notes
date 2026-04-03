@@ -32,7 +32,7 @@ If a system call fails, the library records an error code in a global variable n
 
 System calls themselves are implemented in the kernel. For example, the call that returns the current process ID is implemented in the kernel as a function similar to:
 
-```
+```c
 SYSCALL_DEFINE0(getpid)
 {
     return task_tgid_vnr(current); /* returns current->tgid */
@@ -83,7 +83,7 @@ For example, if a new system call named `foo()` were introduced, it would be add
 
 The implementation might look like this:
 
-```
+```c
 #include <asm/page.h>
 
 /*

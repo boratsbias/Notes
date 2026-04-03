@@ -1,34 +1,10 @@
-# Concurrency
+# Kernel Synchronization
 
-## Introduction
+Shared data inside the kernel must be protected when multiple execution paths can access it at the same time. If several threads operate on the same resource concurrently, one thread may overwrite the changes made by another or read data that is only partially updated. These situations can lead to incorrect program behavior and subtle bugs.
 
-Concurrency is a programming approach where multiple tasks execute during overlapping time periods. These tasks may run truly in parallel on multiple processors, or they may be interleaved by the operating system scheduler on a single processor.
+Handling shared resources in the Linux kernel is challenging because the system supports symmetric multiprocessing. This means kernel code may execute on several CPU cores simultaneously. In addition, the Linux kernel is preemptive, allowing the scheduler to interrupt running kernel code and switch execution to another task.
 
-Using concurrency effectively can significantly improve the performance and responsiveness of software systems, especially when programs must handle many operations at once.
-
-Two common interaction models exist in concurrent systems.
-
-**Shared memory**
-
-Concurrent units communicate by reading and writing the same memory locations. Multiple processors or threads can access shared variables, which allows them to exchange information directly through memory.
-
-Examples include threads within the same process or processors sharing the same physical memory.
-
-**Message passing**
-
-Concurrent units communicate by sending messages through communication channels. Instead of sharing memory, each unit exchanges information using explicit messages.
-
-Examples include processes communicating through pipes, sockets, or other communication mechanisms.
-
-## Processes and Threads
-
-A **process** is a running instance of a program. Each process normally has its own memory space and is isolated from other processes running on the same system.
-
-A **thread** is a unit of execution inside a process. Threads within the same process share the same address space and resources, which allows them to communicate quickly through shared variables.
-
-Because threads share memory, they must coordinate access to shared resources carefully.
-
-A **fiber** is similar to a thread but uses cooperative scheduling. In this model, a running fiber voluntarily yields control so another fiber can execute. In contrast, threads usually rely on preemptive scheduling where the operating system decides when to switch execution.
+Because of these factors, mechanisms are required to coordinate access to shared data. Concurrency control and synchronization tools are used to ensure that kernel operations remain correct even when multiple threads execute at the same time.
 
 ## Critical Regions
 
@@ -38,7 +14,7 @@ If multiple threads execute the same critical region simultaneously, unexpected 
 
 Consider a shared variable `i` that is incremented.
 
-```
+```c
 i++;
 ```
 
@@ -96,7 +72,7 @@ A **spin lock** repeatedly checks whether a lock has become available. Instead o
 
 Example concept:
 
-```
+```c
 volatile int lock = 0;
 
 void acquire() {  
@@ -114,6 +90,57 @@ Spin locks are useful when the waiting time is expected to be very short. In suc
 
 However, if the wait time is long, spin locks waste CPU resources.
 
+## Mutex
+
+A mutex is a synchronization primitive that ensures mutual exclusion. Only one thread can hold the mutex at a time.
+
+A thread must acquire the mutex before entering a critical section and release it when the work is finished.
+
+Unlike semaphores, a mutex has ownership. The thread that locks the mutex must also unlock it.
+
+Mutexes are commonly used to protect shared variables or data structures from concurrent modification.
+
+## Semaphores
+
+A semaphore is a synchronization primitive used to control access to shared resources.
+
+A semaphore maintains an integer counter that represents how many threads can access the resource simultaneously.
+
+Two operations are used.
+
+``wait()``
+
+Decreases the semaphore value.  
+If the value becomes negative, the calling thread blocks until another thread releases the resource.
+
+`signal()`
+
+Increases the semaphore value and wakes one waiting thread if one exists.
+
+Two common types exist.
+
+**Binary semaphore**
+
+The value is limited to 0 or 1.  
+This behaves similarly to a mutex and allows only one thread to access the resource at a time.
+
+**Counting semaphore**
+
+The value can be greater than one.  
+This allows multiple threads to access a resource concurrently up to a defined limit.
+
+Semaphores are commonly used in synchronization problems such as producer consumer systems.
+
+## Reader Writer Locks
+
+Reader writer locks allow multiple threads to read shared data simultaneously while ensuring exclusive access for writing.
+
+When a thread acquires the lock in read mode, other readers can also access the resource at the same time.
+
+When a thread acquires the lock in write mode, it receives exclusive access and no other readers or writers can access the resource.
+
+This type of lock improves performance in systems where read operations occur much more frequently than write operations.
+
 ## Futex
 
 A **futex** (fast userspace mutex) is a synchronization primitive commonly used in operating systems such as Linux.
@@ -124,11 +151,11 @@ The idea is that threads attempt to acquire the lock in user space first. If the
 
 Two main operations exist:
 
-**FUTEX_WAIT**
+`FUTEX_WAIT`
 
 If the value at a given memory address matches an expected value, the thread sleeps and waits for a wake signal.
 
-**FUTEX_WAKE**
+``FUTEX_WAKE``
 
 This operation wakes one or more threads waiting on the same futex variable.
 
