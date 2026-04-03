@@ -2,7 +2,4 @@ remote_theme: pages-themes/primer@v0.6.0
 plugins:
   - jekyll-remote-theme
 title: CS Notes 📚
-description: My personal note
-
-kramdown:
-  math_engine: mathjaxs
+description: My personal notes
