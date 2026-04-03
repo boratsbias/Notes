@@ -87,7 +87,7 @@ The OSI model is a conceptual framework that divides network communication into 
 
 ![OSI model](../../images/cn/osi-model.svg)
 
-**The OSI model**
+**Figure: The OSI model**
 
 The **physical layer** is the lowest layer. It transmits raw bits over a shared medium such as copper cables or optical fiber.
 

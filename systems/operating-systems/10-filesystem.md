@@ -14,7 +14,7 @@ Instead of each filesystem being accessed directly, the kernel interacts with th
 
 ![Filesystem data flow](../../images/os/data-flow.svg)
 
-Figure: Data flow of a write operation through the VFS layer.
+**Figure: Data flow of a write operation through the VFS layer.**
 
 Example flow when writing to a file:
 
@@ -61,7 +61,7 @@ The VFS uses several key data structures to represent filesystem components.
 
 ![Filesystem data flow](../../images/os/data-flow.svg)
 
-Figure: Data flow of a write operation through the VFS layer.
+**Figure: Data flow of a write operation through the VFS layer.**
 
 Each object represents a different part of the filesystem abstraction and contains operation tables that define how the kernel interacts with them.
 
@@ -156,7 +156,7 @@ This structure allows the kernel to efficiently handle read and write operations
 
 ![bio structure](../../images/os/bio.svg)
 
-Figure: Relationship between bio, bio_vec segments, and memory pages.
+**Figure: Relationship between bio, bio_vec segments, and memory pages.**
 
 ## Request Queues
 
