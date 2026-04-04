@@ -1,7 +1,5 @@
 # Processes
 
-## Introduction
-
 A **process** is a program that is currently executing. The program itself is stored as compiled object code, while the process represents the running instance of that program. Many processes can run the same program at the same time.
 
 A process contains several resources such as:

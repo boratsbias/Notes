@@ -1,7 +1,5 @@
 # System Calls
 
-## Introduction
-
 System calls form the interface between user programs and the operating system kernel. They allow programs running in user space to request services that require higher privileges, such as interacting with the filesystem, creating processes, or communicating with hardware.
 
 A user program cannot directly execute kernel code because the kernel operates in a protected memory region. System calls provide a controlled entry point that allows user programs to safely request these operations.

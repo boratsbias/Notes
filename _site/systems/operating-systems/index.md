@@ -9,5 +9,5 @@
 - [Interrupts](06-interrupts.md)
 - [Kernel Synchronization](07-kernel-synchronization)
 - [Memory Management](08-memory-management)
-- [Virtual Memory](09-virtual-management)
+- [Virtual Memory](09-virtual-management.md)
 - [Filesystem](10-filesystem)
