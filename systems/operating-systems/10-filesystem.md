@@ -146,7 +146,7 @@ Instead of representing a single disk block, a bio can represent multiple memory
 
 This structure allows the kernel to efficiently handle read and write operations that involve several memory pages.
 
-![[bio.svg]]
+![Figure 2](../../images/os/bio.svg)
 
 **Figure: Relationship between bio, bio_vec segments, and memory pages.**
 
@@ -158,7 +158,7 @@ Each request may consist of one or more bio structures.
 
 The device driver processes requests from the queue and sends them to the storage hardware.
 
-![[dispatch-queue.svg]]
+![Figure 3](../../images/os/dispatch-queue.svg)
 
 **Figure: Request queue used by the block layer to dispatch I/O operations.**
 

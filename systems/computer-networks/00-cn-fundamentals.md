@@ -68,7 +68,7 @@ Data moves downward through the layers until it reaches the lowest layer where t
 
 Each layer communicates with the corresponding layer on another machine. These communicating components are known as **peers**.
 
-![[images/cn/protocol-peers.svg]]
+![Figure 1](images/cn/protocol-peers.svg)
 
 **Figure: Protocol peers**
 
@@ -85,7 +85,7 @@ Two important terms:
 
 The OSI model is a conceptual framework that divides network communication into seven layers. Each layer performs a specific role in the communication process.
 
-![[images/cn/osi-model.svg]]
+![Figure 2](images/cn/osi-model.svg)
 
 **Figure: The OSI model**
 
@@ -127,7 +127,7 @@ A packet is a small block of data transmitted as a single unit across the networ
 
 Packet switching replaced traditional circuit switching because it improves reliability and resource utilization.
 
-![[images/cn/packet.svg]]
+![Figure 3](images/cn/packet.svg)
 
 **Figure: Packet**
 

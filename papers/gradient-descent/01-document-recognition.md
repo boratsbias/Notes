@@ -2,6 +2,7 @@
 
 **Authors:** Yann LeCun, Leon Bottou, Yoshua Bengio, Patrick Haffner  
 **Area:** Computer Vision, Deep Learning, OCR
+**Link:** https://ieeexplore.ieee.org/document/726791
 
 ## Overview
 
@@ -16,7 +17,7 @@ Traditional pattern recognition systems were built with two separate components:
 1. Feature extractor (handcrafted)
 2. Trainable classifier
 
-![[fig-1-1.png]]
+![Figure 1](../../images/papers/gradient-descent/fig-1-1.png)
 
 *Source: Figure adapted from LeCun et al., "Gradient-Based Learning Applied to Document Recognition", Proceedings of the IEEE, 1998.*
 
@@ -82,7 +83,7 @@ Advantages:
 
 ## LeNet-5 Architecture
 
-![[fig-1-2.png]]
+![Figure 2](../../images/papers/gradient-descent/fig-1-2.png)
 
 *Source: Figure adapted from LeCun et al., "Gradient-Based Learning Applied to Document Recognition", Proceedings of the IEEE, 1998.*
 
@@ -107,7 +108,7 @@ edges → strokes → shapes → digits
 
 ## Graph Transformer Networks (GTN)
 
-![[fig-1-3.png]]
+![Figure 3](../../images/papers/gradient-descent/fig-1-3.png)
 
 *Source: Figure adapted from LeCun et al., "Gradient-Based Learning Applied to Document Recognition", Proceedings of the IEEE, 1998.*
 
@@ -132,33 +133,6 @@ The models achieved **state-of-the-art performance**, outperforming traditional 
 - support vector machines
 - manually engineered feature systems
 
-## Real-World Deployment
+## Real-World Deployment and Impact 
 
-The techniques described in the paper were used in a **bank check recognition system**.
-
-The deployed system:
-
-- extracted fields from checks
-- recognized handwritten digits
-- applied language constraints
-
-The system processed **millions of checks per day in commercial banking systems**, demonstrating the practical viability of neural network-based recognition.
-
-## Key Contributions
-
-- Introduced practical **Convolutional Neural Networks for image recognition**
-- Demonstrated **end-to-end gradient-based learning from raw images**
-- Introduced **weight sharing and pooling mechanisms**
-- Proposed **Graph Transformer Networks for global system training**
-- Showed successful **real-world deployment of deep learning systems**
-
-## Impact
-
-This work laid the foundation for modern computer vision and deep learning.
-
-Many later systems build on these ideas, including:
-
-- modern CNN architectures
-- deep learning vision models
-- OCR systems
-- image classification pipelines
+The methods in this paper were deployed in a bank check recognition system that processed millions of checks daily, proving neural networks could work at real-world scale. The work introduced key ideas such as Convolutional Neural Networks, weight sharing, pooling, and end-to-end learning, which later became the foundation for modern computer vision, OCR systems, and deep learning vision models.
