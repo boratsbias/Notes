@@ -16,7 +16,7 @@ Traditional pattern recognition systems were built with two separate components:
 1. Feature extractor (handcrafted)
 2. Trainable classifier
 
-![[assets/cnn-doc-recognition-traditional-pipeline.png]]
+![[fig-1-1.png]]
 
 *Source: Figure adapted from LeCun et al., "Gradient-Based Learning Applied to Document Recognition", Proceedings of the IEEE, 1998.*
 
@@ -82,7 +82,7 @@ Advantages:
 
 ## LeNet-5 Architecture
 
-![[assets/lenet5-architecture.png]]
+![[fig-1-2.png]]
 
 *Source: Figure adapted from LeCun et al., "Gradient-Based Learning Applied to Document Recognition", Proceedings of the IEEE, 1998.*
 
@@ -107,7 +107,7 @@ edges → strokes → shapes → digits
 
 ## Graph Transformer Networks (GTN)
 
-![[assets/graph-transformer-network.png]]
+![[fig-1-3.png]]
 
 *Source: Figure adapted from LeCun et al., "Gradient-Based Learning Applied to Document Recognition", Proceedings of the IEEE, 1998.*
 

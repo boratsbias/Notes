@@ -1,7 +1,5 @@
 # Filesystem
 
-## Filesystem
-
 A filesystem is the mechanism used by an operating system to organize, store, and retrieve data on storage devices such as disks or SSDs. It defines how files are structured, named, and accessed.
 
 In Linux, filesystems are designed using abstraction layers so that the kernel can interact with different storage formats using the same interface.
@@ -15,10 +13,6 @@ Instead of each filesystem being accessed directly, the kernel interacts with th
 ![Filesystem data flow](../../images/os/data-flow.svg)
 
 **Figure: Data flow of a write operation through the VFS layer.**
-
-Example flow when writing to a file:
-
-Application → system call (`write`) → VFS → specific filesystem → storage device
 
 This abstraction allows Linux to support many filesystems such as ext4, FAT, and network filesystems without modifying kernel logic.
 
@@ -58,8 +52,6 @@ The VFS uses several key data structures to represent filesystem components.
 - inode  
 - dentry  
 - file
-
-![Filesystem data flow](../../images/os/data-flow.svg)
 
 **Figure: Data flow of a write operation through the VFS layer.**
 
@@ -154,7 +146,7 @@ Instead of representing a single disk block, a bio can represent multiple memory
 
 This structure allows the kernel to efficiently handle read and write operations that involve several memory pages.
 
-![bio structure](../../images/os/bio.svg)
+![[bio.svg]]
 
 **Figure: Relationship between bio, bio_vec segments, and memory pages.**
 
@@ -165,6 +157,10 @@ Block devices maintain request queues that hold pending I/O operations.
 Each request may consist of one or more bio structures.
 
 The device driver processes requests from the queue and sends them to the storage hardware.
+
+![[dispatch-queue.svg]]
+
+**Figure: Request queue used by the block layer to dispatch I/O operations.**
 
 ## I/O Schedulers
 
