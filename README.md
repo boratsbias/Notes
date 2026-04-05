@@ -28,5 +28,5 @@ Some useful resources that guide the topics covered in these notes:
 - [https://github.com/ossu/computer-science](https://github.com/ossu/computer-science)
 - [https://github.com/jwasham/coding-interview-university](https://github.com/jwasham/coding-interview-university)
 - [https://github.com/donnemartin/system-design-primer](https://github.com/donnemartin/system-design-primer)
-- [https://github.com/karpathy/nn-zero-to-hero](https://github.com/karpathy/nn-zero-to-hero
+- [https://github.com/karpathy/nn-zero-to-hero](https://github.com/karpathy/nn-zero-to-hero)
 - [https://www.deeplearningbook.org/](https://www.deeplearningbook.org/)
