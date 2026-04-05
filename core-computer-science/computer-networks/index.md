@@ -1,6 +1,6 @@
 # Computer Networking
 
-- [CN Fundamentals](00-cn-fundamentals.md)
+- [CN Fundamentals](core-computer-science/computer-networks/00-cn-fundamentals.md)
 - [Ethernet](01-ethernet.md)
 - [Internet](02-internet.md)
 - [IPv4](03-ipv4.md)

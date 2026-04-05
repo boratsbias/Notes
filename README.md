@@ -1,25 +1,38 @@
 
-This repo is a collection of my personal notes while studying computer science, AI, and related topics. I use it as a place to organize what I learn, revisit concepts later, and slowly build a structured knowledge base.
+This repository is a collection of my personal notes while studying computer science, artificial intelligence, and related areas. I use it to organize what I learn, revisit concepts later, and gradually build a structured knowledge base.
 
-Most notes come from textbooks, research papers, and other technical resources that I study.
+Most notes are based on textbooks, research papers, lectures, and other technical resources that I study along the way.
 
-### [Computational Intelligence](computational-intelligence/)
-Notes related to artificial intelligence, machine learning, deep learning, and data science, along with the mathematical and statistical foundations used in these areas.
+Some sections are still under construction, so a few links or topics may not be available yet.
 
-### [Systems](systems/)
-Core computer systems topics such as operating systems, computer networks, databases, distributed systems, and system design.
+## Topics
 
-### [Papers](papers/)
-Notes and summaries from research papers that I read while learning different topics.
+### [Artificial Intelligence](artificial-intelligence/index)
 
-## References  
-  
-Some useful resources that guide the topics covered in these notes:  
-  
-- [Teach Yourself CS](https://teachyourselfcs.com/)  
-- [Roadmap.sh](https://roadmap.sh/)  
-- [OSSU Computer Science](https://github.com/ossu/computer-science)  
-- [Coding Interview University](https://github.com/jwasham/coding-interview-university)  
-- [System Design Primer](https://github.com/donnemartin/system-design-primer)  
-- [Karpathy: Neural Networks Zero to Hero](https://github.com/karpathy/nn-zero-to-hero)  
-- [Deep Learning Book](https://www.deeplearningbook.org/)
+Notes related to artificial intelligence, machine learning, deep learning, and the mathematical and statistical foundations used in these areas.
+
+### [Core Computer Science](core-computer-science/index.md)
+
+Fundamental computer science topics including compilers, computer architecture, computer networks, data structures and algorithms, databases, distributed systems, and operating systems.
+
+### [Papers](https://chatgpt.com/g/g-p-69b1d52f825c8191af366efdc66969e6-technical-notes/c/papers/)
+
+Notes and summaries from research papers that I read while exploring different topics.
+
+## References
+
+Some useful resources that guide the topics covered in these notes:
+
+- [https://teachyourselfcs.com/](https://teachyourselfcs.com/)
+    
+- [https://roadmap.sh/](https://roadmap.sh/)
+    
+- [https://github.com/ossu/computer-science](https://github.com/ossu/computer-science)
+    
+- [https://github.com/jwasham/coding-interview-university](https://github.com/jwasham/coding-interview-university)
+    
+- [https://github.com/donnemartin/system-design-primer](https://github.com/donnemartin/system-design-primer)
+    
+- [https://github.com/karpathy/nn-zero-to-hero](https://github.com/karpathy/nn-zero-to-hero)
+    
+- [https://www.deeplearningbook.org/](https://www.deeplearningbook.org/)

@@ -1,7 +1,7 @@
 # Gradient-Based Learning Applied to Document Recognition (1998)
 
 **Authors:** Yann LeCun, Leon Bottou, Yoshua Bengio, Patrick Haffner  
-**Area:** Computer Vision, Deep Learning, OCR 
+**Area:** Computer Vision, Deep Learning, OCR  
 **Link:** https://ieeexplore.ieee.org/document/726791
 
 ## Overview
