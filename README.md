@@ -3,7 +3,7 @@ This repository is a collection of my personal notes while studying computer sci
 
 Most notes are based on textbooks, research papers, lectures, and other technical resources that I study along the way.
 
-Some sections are still under construction, so a few links or topics may not be available yet.
+📌 This repository is still a work in progress, so a few sections or links may not be available yet.
 
 ## Topics
 
@@ -15,7 +15,7 @@ Notes related to artificial intelligence, machine learning, deep learning, and t
 
 Fundamental computer science topics including compilers, computer architecture, computer networks, data structures and algorithms, databases, distributed systems, and operating systems.
 
-### [Papers](https://chatgpt.com/g/g-p-69b1d52f825c8191af366efdc66969e6-technical-notes/c/papers/)
+### [Papers](papers/index.md)
 
 Notes and summaries from research papers that I read while exploring different topics.
 
@@ -24,15 +24,9 @@ Notes and summaries from research papers that I read while exploring different t
 Some useful resources that guide the topics covered in these notes:
 
 - [https://teachyourselfcs.com/](https://teachyourselfcs.com/)
-    
 - [https://roadmap.sh/](https://roadmap.sh/)
-    
 - [https://github.com/ossu/computer-science](https://github.com/ossu/computer-science)
-    
 - [https://github.com/jwasham/coding-interview-university](https://github.com/jwasham/coding-interview-university)
-    
 - [https://github.com/donnemartin/system-design-primer](https://github.com/donnemartin/system-design-primer)
-    
-- [https://github.com/karpathy/nn-zero-to-hero](https://github.com/karpathy/nn-zero-to-hero)
-    
+- [https://github.com/karpathy/nn-zero-to-hero](https://github.com/karpathy/nn-zero-to-hero
 - [https://www.deeplearningbook.org/](https://www.deeplearningbook.org/)
