@@ -4,7 +4,7 @@
 
 - Compilers
 - Computer Architecture
-- [Computer Networking](computer-networking/)
+- Computer Networking
 - Data Structures and Algorithms
 - Databases
 - Distributed Systems
