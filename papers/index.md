@@ -3,7 +3,7 @@
 ## Topics
 
 - [Gradient Descent & Optimizations](gradient-descent/)
-- [FeedForward Neural Networks](feedforward-nn/)
+- FeedForward Neural Networks
 - Natural Language Processing (Basics and Core Techniques)
 - GPT Papers (OpenAI)
 - Transformer Models
