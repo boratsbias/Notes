@@ -7,11 +7,11 @@ Most notes are based on textbooks, research papers, lectures, and other technica
 
 ## Topics
 
-### [Artificial Intelligence](artificial-intelligence/index)
+### [Artificial Intelligence](ai/index.md)
 
 Notes related to artificial intelligence, machine learning, deep learning, and the mathematical and statistical foundations used in these areas.
 
-### [Core Computer Science](core-computer-science/index.md)
+### [Core Computer Science](core-cs/index.md)
 
 Fundamental computer science topics including compilers, computer architecture, computer networks, data structures and algorithms, databases, distributed systems, and operating systems.
 
